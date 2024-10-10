@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --red: #174fa4;
+    --black: #2B2024;
+    --select: #e31e10;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+*::selection {
+    color: var(--white);
+    background-color: var(--select);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* !cards */
+.container-card {
+    border: 3px solid var(--red);
+    border-radius: 5px;
+    margin: 1rem 1.5rem;
+}
+
+.card-top {
+    padding: 0.5rem;
+    font-family: "Nanum Gothic Coding", monospace;
+    background: var(--red);
+    color: var(--white);
+    user-select: none;
+}
+
+.card-top p {
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top p>button {
+    font-weight: bold;
+    cursor: copy;
+    background: transparent;
+}
+
+.card-top p>button img {
+    width: 20px;
+    filter: invert();
+}
+
+.card-main {
+    font-size: 1rem;
+    padding: 0.5rem;
+    user-select: auto;
+}
+
+.block {
+    margin-bottom: 2rem;
+}
+
+xmp {
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    color: #6c0b62;
+}
+
+xmp::-webkit-scrollbar {
+    background: #cacaca38;
+    height: 10px;
+    padding: 1rem;
+}
+
+xmp::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+code {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 900;
+    color: var(--red);
+    background: rgb(228, 228, 228);
+    user-select: all;
+    cursor: copy;
+}
+
+/* !main container */
+.container {
+    margin: 2rem auto;
+    min-height: 90vh;
+    max-width: 900px;
+}
+
+.top-container {
+    padding: 0.5rem;
+    background: var(--black);
+    color: var(--white);
+}
+
+/* installing-process */
+.installing-process {
+    width: 100%;
+}
+
+.installing-process p.p {
+    padding: 0.5rem;
+}
+
+.installing-process p.p2 {
+    padding: 0.3rem 1.5rem;
+}
+
+.installing-process h2.h2 {
+    padding: 0.5rem;
+}
+
+/* !copied-msg */
+.copied-msg {
+    position: fixed;
+    width: 100%;
+    padding: 7px;
+    bottom: 4rem;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: green;
+    box-shadow: 0px 3px 12px 5px rgba(133, 133, 133, 0.558);
+
+    width: 0;
+    left: -10%;
+    transition: all 0.3s;
+    /* opacity: 0; */
+}
+
+.notification {
+    z-index: 99;
+    width: 100%;
+    left: 0;
+}
+
+.copied-msg p {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 12px 7px;
+}

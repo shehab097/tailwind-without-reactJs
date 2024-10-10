@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind + vite</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="copied-msg">
+        <p>Copied</p>
+    </div>
+
+    <div class="container">
+        <div class="top-container">
+            <h2>TailwindCSS + Vite</h3>
+        </div>
+
+        <div class="installing-process">
+            <p class="p">
+                If you're setting up <b>Tailwind CSS</b> with <b>PostCSS</b> and <b>Vite</b> for a <b>vanilla HTML and
+                    JavaScript</b> project
+                (without React),
+                follow these steps
+            </p>
+
+
+            <!-- step 1 -->
+            <div class="block">
+
+                <h2 class="h2">1. Create a Vite Project:</h2>
+                <p class="p2">
+                    You can create a <b>Vite</b> project for <b>vanilla HTML/JavaScript</b> like this:
+                </p>
+
+                <div class="container-card">
+                    <div class="card-top">
+                        <p>Node:<button onclick="copyAll(this)"><img src="/img/copy.png" alt=""></button></p>
+                    </div>
+                    <div class="card-main" id="code1"></div>
+                </div>
+            </div>
+
+
+            <!-- step 2 -->
+            <div class="block">
+                <h2 class="h2">2. Install Tailwind CSS and PostCSS:</h2>
+                <p class="p2">
+                    Next, install <code>tailwindcss</code>, <code>postcss</code>, and <code>autoprefixer</code>:
+                </p>
+
+                <div class="container-card">
+                    <div class="card-top">
+                        <p>Node:<button onclick="copyAll(this)"><img src="/img/copy.png" alt=""></button></p>
+                    </div>
+                    <div class="card-main" id="code2"></div>
+                </div>
+
+                <p class="p2">
+                    This will create both <code>tailwind.config.js</code> and <code>postcss.config.js.</code>
+                </p>
+            </div>
+
+            <!-- step 3 -->
+            <div class="block">
+                <h2 class="h2">3. Configure <code>tailwind.config.js</code>:</h2>
+                <p class="p2">
+                    Edit the tailwind.config.js file to include the paths to your HTML and JavaScript files:
+                </p>
+
+                <div class="container-card">
+                    <div class="card-top">
+                        <p>Node:<button onclick="copyAll(this)"><img src="/img/copy.png" alt=""></button></p>
+                    </div>
+                    <div class="card-main" id="code3"></div>
+                </div>
+            </div>
+
+            <!-- step 4 -->
+            <div class="block">
+                <h2 class="h2">4. Add Tailwind to Your CSS:</h2>
+                <p class="p2">
+                    In your <code>src/style.css</code> (or create it if it doesn't exist), add the following Tailwind
+                    directives:
+                </p>
+
+                <div class="container-card">
+                    <div class="card-top">
+                        <p>CSS:<button onclick="copyAll(this)"><img src="/img/copy.png" alt=""></button></p>
+                    </div>
+                    <div class="card-main" id="code4"></div>
+                </div>
+            </div>
+
+            <!-- step 5 -->
+            <div class="block">
+                <h2 class="h2">5. Set Up HTML and JS Files:</h2>
+                <p class="p2">
+                    Ensure you have your <code>index.html</code> in the <code>root</code> or in the <code>public/</code>
+                    directory if you're following Vite conventions. Your
+                    <code>index.html</code> might look like this:
+                </p>
+
+                <div class="container-card">
+                    <div class="card-top">
+                        <p>HTML:<button onclick="copyAll(this)"><img src="/img/copy.png" alt=""></button></p>
+                    </div>
+                    <div class="card-main" id="code5"></div>
+                </div>
+            </div>
+
+            <!-- step 6 -->
+            <div class="block">
+                <h2 class="h2">6. Update Your <code>vite.config.js</code>:</h2>
+                <p class="p2">
+                    Vite should work out of the box with <b>PostCSS</b>, but if you need specific configurations, you
+                    can
+                    modify <code>vite.config.js</code>.
+                    Usually, this step is not necessary for basic setups.
+                </p>
+
+            </div>
+
+            <!-- step 7 -->
+            <div class="block">
+                <h2 class="h2">7. Start the Vite Dev Server:</h2>
+                <p class="p2">
+                    Run the development server with:
+                </p>
+
+                <div class="container-card">
+                    <div class="card-top">
+                        <p>Node:<button onclick="copyAll(this)"><img src="/img/copy.png" alt=""></button></p>
+                    </div>
+                    <div class="card-main" id="code7"></div>
+                </div>
+                <p class="p2">
+                    Your project should now be using <b>Tailwind CSS</b> with <b>PostCSS</b> and <b>Vite</b> for vanilla HTML and JavaScript!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
