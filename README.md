@@ -52,23 +52,20 @@ module.exports = {
 #####Ensure you have your `index.html` in the root or in the `public/ directory` if you're following Vite conventions. Your `index.html` might look like this:
 
 <pre>
-````html
-<!DOCTYPE html>
-<html lang="en">
+````html````
+````<!DOCTYPE html>````
+````<html lang="en">````
+````<head>````
+````    <meta charset="UTF-8">````
+````    <meta name="viewport" content="width=device-width, initial-scale=1.0">````
+````    <title>Vanilla JS + Tailwind</title>````
+````    <link rel="stylesheet" href="/src/style.css">````
+````</head>````
+````<body>````
+````    <h1 class="text-3xl font-bold text-center mt-8">Hello Tailwind with Vite!</h1>````
+````    <script type="module" src="/src/main.js"></script>````
+````</body>````
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanilla JS + Tailwind</title>
-    <link rel="stylesheet" href="/src/style.css">
-</head>
+````</html>````
 
-<body>
-    <h1 class="text-3xl font-bold text-center mt-8">Hello Tailwind with Vite!</h1>
-    <script type="module" src="/src/main.js"></script>
-</body>
-
-</html>
-
-````
 </pre>
