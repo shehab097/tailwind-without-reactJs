@@ -5,26 +5,26 @@
 
 ##### You can create a Vite project for vanilla HTML/JavaScript like this:
 
-<pre>
+```bash
 npm create vite@latest your-project-name --template vanilla
 cd your-project-name
-</pre>
+```
 
 ### 2. Install Tailwind CSS and PostCSS:
 
 ##### Next, install `tailwindcss`, `postcss`, and `autoprefixer`:
 
-<pre>
+```bash
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
-</pre>
+```
 
 ##### This will create both tailwind.config.js and postcss.config.js.
 
 ### 3. Configure `tailwind.config.js`:
 ##### Edit the tailwind.config.js file to include the paths to your HTML and JavaScript files:
 
-<pre>
+```javascript
 module.exports = {
     content: [
         './index.html',
@@ -35,37 +35,58 @@ module.exports = {
     },
     plugins: [],
 };
-</pre>
+```
 
 ###4. Add Tailwind to Your CSS:
 
 #####In your `src/style.css` (or create it if it does not exist), add the following Tailwind directives
 
-<pre>
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-</pre>
+```
 
 ###5. Set Up HTML and JS Files:
 
 #####Ensure you have your `index.html` in the root or in the `public/ directory` if you're following Vite conventions. Your `index.html` might look like this:
 
-<pre>
-````html````
-````<!DOCTYPE html>````
-````<html lang="en">````
-````<head>````
-````    <meta charset="UTF-8">````
-````    <meta name="viewport" content="width=device-width, initial-scale=1.0">````
-````    <title>Vanilla JS + Tailwind</title>````
-````    <link rel="stylesheet" href="/src/style.css">````
-````</head>````
-````<body>````
-````    <h1 class="text-3xl font-bold text-center mt-8">Hello Tailwind with Vite!</h1>````
-````    <script type="module" src="/src/main.js"></script>````
-````</body>````
+```html
+``<!DOCTYPE html>
+<html lang="en">
 
-````</html>````
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS + Tailwind</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
 
-</pre>
+<body>
+    <h1 class="text-3xl font-bold text-center mt-8">Hello Tailwind with Vite!</h1>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
+
+```
+
+###6. Update Your `vite.config.js`:
+
+ #####Vite should work out of the box with PostCSS, but if you need specific configurations, you can modify `vite.config.js`. Usually, this step is not necessary for basic setups.
+ 
+ ###7. Start the Vite Dev Server:
+ 
+ #####Run the development server with:
+ 
+ ```bash
+npm run dev
+```
+
+#####Your project should now be using Tailwind CSS with PostCSS and Vite for vanilla HTML and JavaScript!
+
+
+------------
+
+[Portfolio - HTML, CSS, JS](https://shehab097.github.io/portfolio-web-vanila-css/ "Portfolio - HTML, CSS, JS")
+
