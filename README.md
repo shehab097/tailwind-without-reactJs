@@ -37,9 +37,9 @@ module.exports = {
 };
 ```
 
-###4. Add Tailwind to Your CSS:
+### 4. Add Tailwind to Your CSS:
 
-#####In your `src/style.css` (or create it if it does not exist), add the following Tailwind directives
+##### In your `src/style.css` (or create it if it does not exist), add the following Tailwind directives
 
 ```css
 @tailwind base;
@@ -47,9 +47,9 @@ module.exports = {
 @tailwind utilities;
 ```
 
-###5. Set Up HTML and JS Files:
+### 5. Set Up HTML and JS Files:
 
-#####Ensure you have your `index.html` in the root or in the `public/ directory` if you're following Vite conventions. Your `index.html` might look like this:
+##### Ensure you have your `index.html` in the root or in the `public/ directory` if you're following Vite conventions. Your `index.html` might look like this:
 
 ```html
 ``<!DOCTYPE html>
@@ -71,19 +71,19 @@ module.exports = {
 
 ```
 
-###6. Update Your `vite.config.js`:
+### 6. Update Your `vite.config.js`:
 
- #####Vite should work out of the box with PostCSS, but if you need specific configurations, you can modify `vite.config.js`. Usually, this step is not necessary for basic setups.
+ ##### Vite should work out of the box with PostCSS, but if you need specific configurations, you can modify `vite.config.js`. Usually, this step is not necessary for basic setups.
  
- ###7. Start the Vite Dev Server:
+ ### 7. Start the Vite Dev Server:
  
- #####Run the development server with:
+ ##### Run the development server with:
  
  ```bash
 npm run dev
 ```
 
-#####Your project should now be using Tailwind CSS with PostCSS and Vite for vanilla HTML and JavaScript!
+##### Your project should now be using Tailwind CSS with PostCSS and Vite for vanilla HTML and JavaScript!
 
 
 ------------
