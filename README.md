@@ -52,7 +52,7 @@ module.exports = {
 ##### Ensure you have your `index.html` in the root or in the `public/ directory` if you're following Vite conventions. Your `index.html` might look like this:
 
 ```html
-``<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
